@@ -164,8 +164,8 @@ const Home = () => {
               />
             )}
 
-            <div className="p-5 flex flex-col flex-grow">
-              {/* Poster info */}
+            <div className="p-5 flex flex-col">
+              
               <div className="flex items-center mb-3">
                 <img
                   src={job.coverImage || "https://via.placeholder.com/40"}
@@ -178,7 +178,7 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Title + Category + Level */}
+              {/* Title , Category , Level */}
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-lg font-semibold text-gray-800 truncate">{job.title}</h2>
                 <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
@@ -187,10 +187,10 @@ const Home = () => {
               </div>
               <p className="text-xs text-gray-500 mb-2">Level: {job.level || "Intermediate"}</p>
 
-              {/* Summary */}
-              <p className="text-gray-600 text-sm mb-4 flex-grow">{job.summary}</p>
+             
+              <p className="text-gray-600 text-sm mb-4 ">{job.summary}</p>
 
-              {/* Price + Rating */}
+             
               <div className="flex items-center justify-between mb-4 text-sm">
                 <span className="font-bold text-gray-800">${job.price || 0}</span>
                 <div className="flex items-center gap-1 text-yellow-500">
@@ -200,7 +200,7 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Action Buttons */}
+              
               <div className="flex justify-between mt-auto">
                 <Link
                   to={`/job/${job._id}`}
