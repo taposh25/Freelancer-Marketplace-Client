@@ -29,12 +29,12 @@ const Login = () => {
     );
 
     if (!user) {
-      toast.error("Invalid email or password!");
+      toast.error("Invalid email or password !");
       return;
     }
 
     localStorage.setItem("user", JSON.stringify(user));
-    toast.success(`Welcome back, ${user.name}!`);
+    toast.success(`Welcome back !, ${user.name}!`);
     navigate("/");
   };
 
