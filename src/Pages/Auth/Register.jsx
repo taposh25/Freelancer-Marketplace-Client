@@ -26,11 +26,11 @@ const Register = () => {
     }
 
     if (password !== confirmPassword) {
-      toast.error("Passwords do not match!");
+      toast.error("Password do not match!");
       return;
     }
 
-    // Check if user already exists
+
     const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
     const userExists = existingUsers.find((user) => user.email === email);
 
