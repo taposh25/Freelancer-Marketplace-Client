@@ -100,6 +100,8 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import { Link } from "react-router-dom";
+import MyAcceptedTasks from "../Jobs/MyAcceptedTasks";
+
 
 const Home = () => {
   const [jobs, setJobs] = useState([]);
@@ -148,6 +150,7 @@ const Home = () => {
     <div className="container mx-auto p-6 ">
       <h1 className="text-3xl font-bold mb-6 ">Available Jobs</h1>
       
+    <MyAcceptedTasks></MyAcceptedTasks>
       {jobs.length === 0 && <p className="text-center text-gray-500">No jobs available.</p>}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

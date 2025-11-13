@@ -42,6 +42,7 @@ const router = createBrowserRouter([
       { path: "/my-accepted-tasks", element: <PrivateRoute><MyAcceptedTasks /></PrivateRoute> },
       { path: "/login", element: <Login></Login> },
       { path: "/register", element: <Register></Register> },
+      {path: "/my-added-jobs", Component: MyAddedJobs},
       { path: "*", element: <NotFound /> },
     ],
   },
